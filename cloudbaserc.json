@@ -16,7 +16,7 @@
           },
           "envVariables": {
             "WEBSOCKET_ENABLED": "false",
-            "ENABLE_DB_WAL": "false",
+            "ENABLE_DB_WAL": "false"
           },
           "volumeMounts": {
             "/data": "bitwarden-cfs"
