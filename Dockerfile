@@ -11,7 +11,7 @@ FROM bitwardenrs/server:latest
 # RUN sudo apt install mysql-server
 
 # RUN apt-get update && apt-get install -y mysql-client
-RUN apt-get update && echo Y | apt install mariadb-client
+RUN apt-get update && echo 'y' | apt install mariadb-client
 
 COPY ./entrypoint.sh ./entrypoint.sh
 
