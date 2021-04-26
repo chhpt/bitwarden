@@ -16,7 +16,7 @@
           },
           "envVariables": {
             "WEBSOCKET_ENABLED": "false",
-            "ENABLE_DB_WAL": "false"
+            "DATABASE_URL": "mysql://{{env.DB_USER}}:{{env.DB_PASSWORD}}@{{env.DB_IP}}:{{env.DB_PORT}}/bitwarden"
           },
           "volumeMounts": {
             "/data": "bitwarden-cfs"
@@ -29,6 +29,16 @@
         {
           "type": "CFS",
           "name": "bitwarden-cfs"
+        },
+        {
+          "type": "CynosDB",
+          "name": "bitwarden",
+          "envMap": {
+            "IP": "DB_IP",
+            "PORT": "DB_PORT",
+            "USERNAME": "DB_USER",
+            "PASSWORD": "DB_PASSWORD"
+          }
         }
       ]
     }
