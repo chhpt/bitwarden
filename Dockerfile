@@ -1,4 +1,4 @@
-FROM bitwardenrs/server:latest
+FROM bitwardenrs/server:alpine
 
 # apk 加速
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
