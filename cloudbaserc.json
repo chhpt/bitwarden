@@ -12,7 +12,7 @@
           "uploadType": "image",
           "containerPort": 80,
           "imageInfo": {
-            "imageUrl": "bitwardenrs/server"
+            "imageUrl": "bitwardenrs/server:latest"
           },
           "envVariables": {
             "WEBSOCKET_ENABLED": "false",
