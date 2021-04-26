@@ -15,7 +15,8 @@
             "imageUrl": "ccr.ccs.tencentyun.com/tcb_public/bitwardenrs_server:alpine"
           },
           "envVariables": {
-            "WEBSOCKET_ENABLED": "false"
+            "WEBSOCKET_ENABLED": "false",
+            "ENABLE_DB_WAL": "false",
           },
           "volumeMounts": {
             "/data": "bitwarden-cfs"
