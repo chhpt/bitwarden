@@ -16,8 +16,8 @@
           },
           "envVariables": {
             "WEBSOCKET_ENABLED": "false",
-            "ENABLE_DB_WAL": "fasle",
-            "DATABASE_URL": "mysql://{{env.DB_USER}}:{{env.DB_PASSWORD}}@{{env.DB_IP}}:{{env.DB_PORT}}/bitwarden"
+            "RUST_BACKTRACE: "1",
+            "DATABASE_URL": "mysql://{{env.DB_USER}}:{{env.DB_PASSWORD}}@{{env.DB_IP}}:{{env.DB_PORT}}"
           },
           "volumeMounts": {
             "/data": "bitwarden-cfs"
